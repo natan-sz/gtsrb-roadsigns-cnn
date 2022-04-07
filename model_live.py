@@ -5,10 +5,24 @@ from keras import models
 import pickle
 from road_labels import label_name
 import numpy as np
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-m", "--model", help="models: alpha_aug beta_aug gamma_aug",required=True)
+args = parser.parse_args()
+
+if args.model == "alpha_aug":
+    model_file = "model_alpha_aug.pickle"
+elif args.model == "beta_aug":
+    model_file = "model_beta_aug.pickle"
+elif args.model == "gamma_aug":
+    model_file = "model_gamma_aug.pickle"
+else:
+    print("Model not provided add a --model flag")
 
 # Start video capute and load the saved model
 video = cv2.VideoCapture(0)
-with open('model_alpha_aug.pickle', 'rb') as f:
+with open(model_file, 'rb') as f:
     model = pickle.load(f)
 
 while True:
