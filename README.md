@@ -1,6 +1,8 @@
 # GTSRB Roadsigns (CNN)
 Convolutional Neural Network solution for the GTSRB Roadsigns dataset.
 
+<img width=400 src="https://production-media.paperswithcode.com/datasets/GTSRB-0000000633-9ce3c5f6_Dki5Rsf.jpg"/>
+
 ### Quickstart
 
 To install dependencies, run the below
