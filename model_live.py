@@ -15,8 +15,14 @@ if args.model == "alpha_aug":
     model_file = "model_alpha_aug.pickle"
 elif args.model == "beta_aug":
     model_file = "model_beta_aug.pickle"
+elif args.model == "alpha":
+    model_file = "model_alpha.pickle"
+elif args.model == "alpha_aug_fix":
+    model_file = "model_alpha_aug_fix.pickle"
 elif args.model == "gamma_aug":
     model_file = "model_gamma_aug.pickle"
+elif args.model == "gamma_aug_fix":
+    model_file = "model_gamma_aug_fix.pickle"
 else:
     print("Model not provided add a --model flag")
 
