@@ -64,7 +64,7 @@ while True:
         probabilities = model.predict(img_array)
         prediction = np.argmax(probabilities)
 
-        print(f"{label_name[prediction]} ({probabilities[0][prediction]}%)")
+        print(f"Predicted: {label_name[prediction]}")
         
 
         out = np.uint8(im)
